@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browsers" value="firefox"/>
+    <classes>
+      <class name="facebook">
+        <methods>
+          <include name="two" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- facebook -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Testone(failed)">
+    <parameter name="browsers" value="firefox"/>
+    <classes>
+      <class name="gmail">
+        <methods>
+          <include name="one" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- gmail -->
+    </classes>
+  </test> <!-- Testone(failed) -->
+</suite> <!-- Failed suite [Suite] -->
